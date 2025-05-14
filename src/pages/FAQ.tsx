@@ -6,44 +6,44 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const FAQ = () => {
   const faqItems = [
     {
-      question: "Como funciona o processo de venda no SemAtravessador?",
-      answer: "O processo é simples: você cadastra seu veículo, define seu preço mínimo, recebe propostas de compradores cadastrados em nossa plataforma e escolhe a melhor oferta. Nosso sistema de leilão garante transparência e o melhor preço para seu carro."
+      question: "Anunciar meu carro é realmente gratuito?",
+      answer: "Sim! Criar e publicar um anúncio no Balcão do Carro é totalmente gratuito. Você só paga se quiser liberar os contatos das pessoas que fizeram ofertas no seu carro — e esse valor é fixo: R$99."
     },
     {
-      question: "Quais são as taxas cobradas?",
-      answer: "Não cobramos comissões sobre a venda. Temos apenas uma taxa fixa de anúncio, que é cobrada somente quando você decide publicar seu veículo na plataforma. Todas as taxas são claramente informadas antes de você confirmar o anúncio."
+      question: "Como funciona a dinâmica de ofertas?",
+      answer: "Você anuncia seu carro e define um preço inicial (recomendamos começar com o valor que uma concessionária pagaria, cerca de 60% a 65% da Tabela Fipe). Conforme os compradores visualizam seu anúncio, eles fazem ofertas. A melhor oferta aparece publicamente no anúncio, como referência, mas ninguém sabe quem fez."
     },
     {
-      question: "Quanto tempo leva para vender meu carro?",
-      answer: "O tempo médio de venda é de 3 dias, mas pode variar dependendo do modelo, ano, condições do veículo e preço solicitado. Veículos com preços competitivos costumam vender mais rapidamente."
+      question: "Por que vale a pena anunciar com um preço inicial mais baixo?",
+      answer: "Quanto menor o valor do anúncio, maior o número de compradores interessados. O Balcão do Carro tem uma dinâmica inteligente de notificação: toda vez que uma nova oferta é feita, todas as pessoas que já fizeram propostas anteriormente recebem um aviso. Isso cria uma disputa natural entre compradores, fazendo com que os carros anunciados por preços mais baixos atraiam mais atenção, recebam mais lances e — na maioria das vezes — sejam vendidos mais rápido e por valores mais altos."
     },
     {
-      question: "Como sei que receberei o pagamento pelo meu veículo?",
-      answer: "Nós intermediamos todo o processo de pagamento através da nossa plataforma segura. O dinheiro é depositado em uma conta garantidora e só é liberado para o vendedor quando o comprador confirma o recebimento do veículo nas condições anunciadas."
+      question: "Quando eu pago os R$99?",
+      answer: "Você só paga se quiser liberar os contatos dos compradores que fizeram ofertas. Após o pagamento, você poderá entrar em contato com qualquer um deles para negociar diretamente."
     },
     {
-      question: "É preciso levar o carro para algum lugar?",
-      answer: "Não. As visitas e avaliações acontecem no local que você determinar. Você só precisa se deslocar para finalizar a documentação de transferência, caso prefira fazer isso pessoalmente."
+      question: "E se eu não gostar de nenhuma oferta?",
+      answer: "Sem problema. Você não paga nada e pode manter o anúncio no ar, ajustando o preço se quiser. Só paga os R$99 se quiser negociar com alguém."
     },
     {
-      question: "Como funciona a transferência de documentação?",
-      answer: "Após a venda, orientamos ambas as partes sobre o processo de transferência. Você pode optar por fazer o processo pessoalmente ou utilizar nosso serviço de despachante parceiro, que cuida de toda a burocracia por uma taxa adicional."
+      question: "O que acontece após eu pagar os R$99?",
+      answer: "Você recebe acesso aos dados de contato (telefone, e-mail e chat na plataforma) de todas as pessoas que fizeram propostas. A negociação passa a ser direta entre você e o comprador."
     },
     {
-      question: "O que acontece se o comprador desistir da compra?",
-      answer: "Caso o comprador desista após o pagamento, ele perde uma taxa de compromisso que é revertida para você como compensação pelo tempo perdido. Seu anúncio volta a ficar ativo na plataforma automaticamente."
+      question: "Posso vender o carro para quem eu quiser?",
+      answer: "Sim! Você pode escolher com quem quer negociar, como vai receber o pagamento e onde será feito o encontro. O Balcão do Carro apenas facilita o contato."
     },
     {
-      question: "Posso cancelar meu anúncio a qualquer momento?",
-      answer: "Sim, você pode cancelar seu anúncio a qualquer momento antes de aceitar uma oferta. Caso já tenha aceitado uma oferta mas a negociação não tenha sido concluída, podem haver penalidades conforme nossos termos de uso."
+      question: "O Balcão do Carro participa da negociação ou da transferência do veículo?",
+      answer: "Não. Toda negociação, pagamento e transferência são de inteira responsabilidade entre vendedor e comprador. O Balcão do Carro é apenas uma plataforma de anúncios que conecta pessoas interessadas em vender e comprar veículos. Recomendamos que ambas as partes realizem a transação com segurança e dentro da legalidade."
     },
     {
-      question: "Como são verificados os compradores?",
-      answer: "Todos os compradores passam por um processo de verificação que inclui validação de documentos pessoais, consulta em órgãos de proteção ao crédito e histórico na plataforma. Apenas compradores verificados podem fazer ofertas pelo seu veículo."
+      question: "Quais cuidados de segurança devo ter ao negociar?",
+      answer: "Negociar diretamente com outra pessoa pode ser seguro se você seguir algumas boas práticas:\n\nPara o vendedor:\n• Nunca entregue o carro ou documentos antes de o pagamento ser efetivado.\n• Confirme se o valor foi realmente creditado na sua conta antes de transferir o veículo. Não confie em comprovantes.\n\nPara o comprador:\n• Certifique-se de que o vendedor é realmente o proprietário do veículo, verificando o CRLV.\n• Consulte a situação do veículo no site do Detran: restrições, multas e débitos.\n\nPara ambos:\n• Marquem encontros em locais públicos e movimentados, como estacionamentos de shoppings ou agências bancárias.\n• Levem alguém de confiança para acompanhar.\n• Se possível, façam a vistoria juntos em um local especializado antes de fechar negócio.\n\nSeguindo essas recomendações, a venda ou compra do carro será mais segura e tranquila para todos os envolvidos."
     },
     {
-      question: "É possível negociar o preço?",
-      answer: "Sim. Embora você defina um preço mínimo aceitável, os compradores podem fazer ofertas acima desse valor. Você decide se aceita ou não, e pode fazer contrapropostas."
+      question: "Como entro em contato com o suporte?",
+      answer: "Envie um e-mail para: contato@balcaodocarro.com.br. Nosso time está pronto para te ajudar."
     }
   ];
 
@@ -52,14 +52,14 @@ const FAQ = () => {
       <div className="bg-blue-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-2">Perguntas Frequentes</h1>
-          <p className="text-center text-gray-600 mb-12">Tudo o que você precisa saber sobre vender seu carro na plataforma SemAtravessador</p>
+          <p className="text-center text-gray-600 mb-12">Tudo o que você precisa saber sobre vender seu carro na plataforma Balcão do Carro</p>
           
           <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-sm p-6">
             <Accordion type="single" collapsible className="w-full">
               {faqItems.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
                   <AccordionTrigger className="text-lg font-medium text-left">{item.question}</AccordionTrigger>
-                  <AccordionContent className="text-gray-600">{item.answer}</AccordionContent>
+                  <AccordionContent className="text-gray-600 whitespace-pre-line">{item.answer}</AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
@@ -68,6 +68,7 @@ const FAQ = () => {
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-4">Não encontrou o que procurava?</p>
             <a href="/contato" className="text-blue-500 font-medium hover:text-blue-700">Entre em contato conosco</a>
+            <p className="text-gray-400 text-sm mt-8">Última atualização: Maio de 2025</p>
           </div>
         </div>
       </div>
