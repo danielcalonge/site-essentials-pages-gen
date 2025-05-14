@@ -17,11 +17,11 @@ const About = () => {
         </div>
       </div>
       
-      {/* Mission Section */}
+      {/* Manifesto Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Nossa Missão</h2>
+            <h2 className="text-3xl font-bold mb-6">Manifesto</h2>
             <p className="text-lg text-gray-600 mb-6">
               Nascemos em 2023 com uma missão clara: trazer transparência e eficiência ao mercado 
               de carros usados no Brasil, eliminando intermediários desnecessários e devolvendo 
