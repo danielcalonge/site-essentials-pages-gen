@@ -23,15 +23,29 @@ const About = () => {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Manifesto</h2>
             <p className="text-lg text-gray-600 mb-6">
-              Nascemos em 2023 com uma missão clara: trazer transparência e eficiência ao mercado 
-              de carros usados no Brasil, eliminando intermediários desnecessários e devolvendo 
-              o poder de negociação aos proprietários de veículos.
+              No Balcão do Carro, começamos com uma simples pergunta:
+              por que existe tanta diferença entre o que a concessionária paga no seu carro e o quanto ela cobra por ele dias depois?
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              A resposta, infelizmente, é bem conhecida por quem já tentou vender ou comprar um carro usado: o dono perde até 40% do valor na troca, e o comprador paga caro demais por algo que poderia custar bem menos.
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              A gente achou isso errado.
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              Foi aí que nasceu o Balcão do Carro.
+              Nosso sonho é revolucionar esse mercado — aproximando pessoas, tirando o atravessador, e tornando tudo mais simples, transparente e justo.
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              Queremos que quem está vendendo o carro consiga um valor melhor do que teria na concessionária, e que quem está comprando possa pagar menos do que pagaria numa loja — com segurança, agilidade e confiança dos dois lados.
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              Somos apaixonados por facilitar essa conexão. Por isso, estamos construindo uma plataforma para que vender e comprar um carro direto com outra pessoa seja mais rápido, fácil e inteligente.
             </p>
             <p className="text-lg text-gray-600">
-              Acreditamos que todo proprietário de veículo merece receber um valor justo por seu 
-              carro, sem pressões de concessionárias ou revendas que buscam maximizar seus próprios 
-              lucros. Por isso, criamos um marketplace onde vendedores e compradores se conectam 
-              diretamente, garantindo o melhor preço para ambos.
+              O Balcão do Carro é isso:
+              um novo jeito de fazer negócios com o seu carro.
+              Mais justo pra quem vende. Mais leve pra quem compra. E melhor pra todo mundo.
             </p>
           </div>
         </div>
