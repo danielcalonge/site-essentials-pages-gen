@@ -8,49 +8,53 @@ import {
   FileText, 
   MessageCircle, 
   ShieldCheck, 
-  Users 
+  Users,
+  Check
 } from 'lucide-react';
 
 const SellingGuide = () => {
   const steps = [
     {
       icon: <ClipboardList className="h-8 w-8 text-blue-500" />,
-      title: "Cadastre seu veículo",
-      description: "Preencha o formulário com informações detalhadas sobre seu carro, incluindo marca, modelo, ano, quilometragem e histórico de manutenção."
+      title: "Crie seu anúncio (grátis!)",
+      description: "Cadastre-se na plataforma e preencha todas as informações sobre seu carro: modelo, ano, quilometragem, cor, opcionais, estado de conservação e qualquer detalhe que possa valorizar seu veículo."
     },
     {
       icon: <Camera className="h-8 w-8 text-blue-500" />,
-      title: "Adicione fotos de qualidade",
-      description: "Tire fotos nítidas do exterior e interior do veículo. Imagens de qualidade aumentam a confiança dos compradores e aceleram a venda."
-    },
-    {
-      icon: <DollarSign className="h-8 w-8 text-blue-500" />,
-      title: "Defina seu preço mínimo",
-      description: "Estabeleça o valor mínimo que você aceita pelo seu carro. O sistema não permitirá ofertas abaixo desse valor."
-    },
-    {
-      icon: <ShieldCheck className="h-8 w-8 text-blue-500" />,
-      title: "Verifique seu anúncio",
-      description: "Nosso time verificará as informações para garantir a qualidade do anúncio, evitando problemas futuros na negociação."
+      title: "Adicione boas fotos",
+      description: "Capriche na iluminação e mostre todos os ângulos do carro. Boas fotos aumentam a confiança dos compradores e aceleram a venda."
     },
     {
       icon: <Users className="h-8 w-8 text-blue-500" />,
-      title: "Receba ofertas de compradores",
-      description: "Após a aprovação, seu anúncio ficará visível para compradores verificados que poderão fazer ofertas pelo seu veículo."
+      title: "Aguarde as ofertas",
+      description: "Seu anúncio será exibido na plataforma e compradores reais poderão fazer propostas. Você pode acompanhar as ofertas conforme elas forem chegando."
+    },
+    {
+      icon: <DollarSign className="h-8 w-8 text-blue-500" />,
+      title: "Recebeu uma boa oferta? Libere o contato por R$99",
+      description: "Quando uma oferta te agradar, você poderá desbloquear os contatos dos interessados mediante o pagamento único de R$99. Você terá acesso aos dados de todos que fizeram ofertas."
     },
     {
       icon: <MessageCircle className="h-8 w-8 text-blue-500" />,
-      title: "Negocie com segurança",
-      description: "Use nosso chat interno para tirar dúvidas e negociar com os interessados de forma segura e transparente."
+      title: "Negocie diretamente com o comprador",
+      description: "Entre em contato com o comprador da oferta escolhida. Marque um encontro em local seguro para ele conhecer o carro. Conversem sobre o pagamento, transferência e demais detalhes."
     },
     {
       icon: <FileText className="h-8 w-8 text-blue-500" />,
-      title: "Finalize a venda",
-      description: "Após aceitar uma oferta, nosso sistema guiará você e o comprador pelo processo de pagamento e transferência do veículo."
+      title: "Finalize a venda com liberdade",
+      description: "A negociação é 100% sua. O Balcão do Carro não interfere, apenas te conecta com quem quer comprar. Você decide como, quando e com quem fechar negócio."
     }
   ];
 
   const tips = [
+    {
+      title: "Comece com um preço estratégico",
+      description: "Considere iniciar o anúncio com um preço semelhante ao que uma concessionária pagaria — geralmente entre 60% e 65% da Tabela Fipe. Isso atrai mais compradores para fazerem ofertas."
+    },
+    {
+      title: "Use a plataforma para conversas iniciais",
+      description: "Utilize o chat da plataforma para conversar de forma segura até sentir confiança para o contato direto com o comprador."
+    },
     {
       title: "Documentação em dia",
       description: "Certifique-se que toda documentação do veículo está regularizada antes de anunciar. Isso inclui IPVA, licenciamento e possíveis multas."
@@ -64,17 +68,17 @@ const SellingGuide = () => {
       description: "Antes de fotografar, faça uma limpeza completa no veículo, incluindo lavagem externa, aspiração interna e polimento. Carros limpos vendem mais rápido."
     },
     {
-      title: "Preço competitivo",
-      description: "Pesquise o valor de mercado do seu modelo e defina um preço realista. Veículos com preços muito acima do mercado demoram mais para vender."
-    },
-    {
       title: "Responda rapidamente",
       description: "Compradores valorizam vendedores que respondem com agilidade. Configure notificações para não perder mensagens importantes."
-    },
-    {
-      title: "Tenha histórico de manutenção",
-      description: "Se possível, tenha em mãos o histórico de revisões e manutenções do veículo. Isso transmite segurança e pode justificar um valor mais alto."
     }
+  ];
+
+  const advantages = [
+    "Anuncie grátis",
+    "Ofertas reais e diretas de compradores",
+    "Você só paga se quiser negociar (R$99)",
+    "Transparência: todos veem a melhor oferta, mas sem saber quem fez",
+    "Negociação simples, entre pessoas reais"
   ];
 
   return (
@@ -84,7 +88,7 @@ const SellingGuide = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Guia de Venda</h1>
           <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-            Aprenda como vender seu carro rapidamente, com segurança e pelo melhor preço possível.
+            Vender seu carro nunca foi tão simples, econômico e transparente. No Balcão do Carro, você anuncia de graça, recebe ofertas reais e só paga R$99 se decidir negociar.
           </p>
         </div>
       </div>
@@ -119,16 +123,16 @@ const SellingGuide = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <p className="text-4xl font-bold">3 dias</p>
-              <p className="text-lg mt-2">Tempo médio de venda</p>
-            </div>
-            <div className="text-center">
               <p className="text-4xl font-bold">40%</p>
-              <p className="text-lg mt-2">Mais valor que em concessionárias</p>
+              <p className="text-lg mt-2">Mais valor na sua venda</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold">95%</p>
-              <p className="text-lg mt-2">Taxa de conclusão de vendas</p>
+              <p className="text-4xl font-bold">5 dias</p>
+              <p className="text-lg mt-2">Tempo médio para receber ofertas</p>
+            </div>
+            <div className="text-center">
+              <p className="text-4xl font-bold">R$99</p>
+              <p className="text-lg mt-2">Único valor cobrado (só se negociar)</p>
             </div>
           </div>
         </div>
@@ -152,8 +156,28 @@ const SellingGuide = () => {
         </div>
       </section>
 
-      {/* Photography Guide Section */}
+      {/* Advantages Section */}
       <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Resumo das vantagens</h2>
+          
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <ul className="space-y-4">
+                {advantages.map((advantage, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-lg">{advantage}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photography Guide Section */}
+      <section className="bg-white py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Guia de Fotografia</h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
@@ -162,7 +186,7 @@ const SellingGuide = () => {
           </p>
           
           <div className="max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Ângulos Essenciais</h3>
@@ -238,11 +262,17 @@ const SellingGuide = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Pronto para vender seu carro?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Com o SemAtravessador, você vende seu veículo de forma rápida, segura e pelo melhor preço do mercado.
+            Com o Balcão do Carro, você vende seu veículo de forma rápida, segura e pelo melhor preço do mercado.
           </p>
           <a href="/criar-conta" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium inline-block transition-colors">
             Anunciar meu carro
           </a>
+          <p className="mt-4 text-gray-500">
+            Dúvidas? Fale conosco pelo e-mail <a href="mailto:contato@balcaodocarro.com.br" className="text-blue-500 hover:underline">contato@balcaodocarro.com.br</a>
+          </p>
+          <p className="mt-2 text-sm text-gray-400">
+            Última atualização: Maio de 2025
+          </p>
         </div>
       </section>
     </PageLayout>
@@ -250,3 +280,4 @@ const SellingGuide = () => {
 };
 
 export default SellingGuide;
+
