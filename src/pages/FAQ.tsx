@@ -15,7 +15,7 @@ const FAQ = () => {
     },
     {
       question: "Por que vale a pena anunciar com um preço inicial mais baixo?",
-      answer: "Quanto menor o valor do anúncio, maior o número de compradores interessados. O Balcão do Carro tem uma dinâmica inteligente de notificação: toda vez que uma nova oferta é feita, todas as pessoas que já fizeram propostas anteriormente recebem um aviso. Isso cria uma disputa natural entre compradores, fazendo com que os carros anunciados por preços mais baixos atraiam mais atenção, recebam mais lances e — na maioria das vezes — sejam vendidos mais rápido e por valores mais altos."
+      answer: "Quanto menor o valor do anúncio, maior o número de compradores interessados. O Balcão do Carro tem uma dinâmica inteligente de notificação: toda vez que uma nova oferta é feita, todas as pessoas que já fizeram propostas anteriormente recebem um aviso. Isso cria uma disputa natural entre compradores, fazendo com que os carros anunciados por preços mais baixos atraiam mais atenção, recebam mais ofertas e — na maioria das vezes — sejam vendidos mais rápido e por valores mais altos."
     },
     {
       question: "Quando eu pago os R$99?",

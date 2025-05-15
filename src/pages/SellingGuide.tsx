@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageLayout from '@/components/PageLayout';
 import { 
@@ -280,4 +279,3 @@ const SellingGuide = () => {
 };
 
 export default SellingGuide;
-
